@@ -1,5 +1,5 @@
 module RushAnalyticsApi
-  class WordstatProojectStatus
+  class WordstatProjectStatus
     ACTION = :rushapi__wordstat_project_status
     def initialize(session_id)
       @session_id = session_id

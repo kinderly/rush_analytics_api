@@ -37,8 +37,8 @@ module RushAnalyticsApi
       end
     end
 
-    def call
-      res = Request.new(ACTION, @message).call
+    def call(api_key = nil)
+      res = Request.new(ACTION, api_key, @message).call
       res.body[:rushapi__create_top10_project_response][:return]
     end
   end

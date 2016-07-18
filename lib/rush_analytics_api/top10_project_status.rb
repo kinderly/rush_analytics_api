@@ -6,8 +6,8 @@ module RushAnalyticsApi
       @session_id = session_id
     end
 
-    def call
-      res = Request.new(ACTION, session_id: @session_id).call
+    def call(api_key = nil)
+      res = Request.new(ACTION, api_key, session_id: @session_id).call
       res.body[:rushapi__top10_project_status_response][:return]
     end
   end

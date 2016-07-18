@@ -2,9 +2,10 @@ module RushAnalyticsApi
   class Request
     URL = 'http://www.api.rush-analytics.ru/api.php?wsdl'
 
-    def initialize(action, message = {})
+    def initialize(action, api_key = nil, message = {})
       @action = action
-      @message = { 'hash' => ENV['rush_api_key'] }.merge(message)
+      @api_key = api_key || ENV['rush_api_key']
+      @message = { 'hash' => @api_key }.merge(message)
     end
 
     def call

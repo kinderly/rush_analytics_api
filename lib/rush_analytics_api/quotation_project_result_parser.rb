@@ -1,6 +1,6 @@
 module RushAnalyticsApi
   class QuotationProjectResultParser
-    def initialze(url)
+    def initialize(url)
       @url = url
     end
 

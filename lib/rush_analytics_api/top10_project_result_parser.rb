@@ -5,7 +5,8 @@ module RushAnalyticsApi
     end
 
     def call
-      file = Roo::Spreadsheet.open(@url, extension: 'xlsx')
+      tmp_file = open(@url)
+      file = Roo::Spreadsheet.open(tmp_file, extension: 'xlsx')
       sheet = file.sheet(0)
       res = {}
       sheet.each_row_streaming(offset: 1) do |row|

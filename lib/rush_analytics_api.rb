@@ -14,4 +14,5 @@ module RushAnalyticsApi
   require 'savon'
   require 'nori'
   require 'roo'
+  require 'open-uri'
 end

@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'rush_analytics_api'
-  s.version = '0.1.8'
+  s.version = '0.2.0'
   s.authors = ['Kinderly LTD']
   s.email = 'pustserg@yandex.ru'
   s.homepage = 'https://github.com/kinderly/rush_analytics_api'

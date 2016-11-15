@@ -10,6 +10,10 @@ module RushAnalyticsApi
   require 'rush_analytics_api/top10_project_status'
   require 'rush_analytics_api/top10_project_result_parser'
 
+  require 'rush_analytics_api/create_suggest_project'
+  require 'rush_analytics_api/suggest_project_status'
+  require 'rush_analytics_api/suggest_project_result_parser'
+
   require 'nokogiri'
   require 'savon'
   require 'nori'

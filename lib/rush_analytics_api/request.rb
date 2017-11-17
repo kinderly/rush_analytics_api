@@ -1,6 +1,6 @@
 module RushAnalyticsApi
   class Request
-    URL = 'http://www.api.rush-analytics.ru/api.php?wsdl'
+    URL = 'http://api.rush-analytics.ru/api.php?wsdl'
 
     def initialize(action, api_key = nil, message = {})
       @action = action

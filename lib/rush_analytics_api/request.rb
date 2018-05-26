@@ -9,7 +9,7 @@ module RushAnalyticsApi
     end
 
     def call
-      @client = Savon.client(wsdl: URL, log_level: :debug, pretty_print_xml: true, log: true)
+      @client = Savon.client(wsdl: URL, log_level: :debug, pretty_print_xml: true, log: true, ssl_verify_mode: :none)
       @client.call(@action, message: @message)
     end
   end
